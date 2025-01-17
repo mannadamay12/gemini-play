@@ -3,7 +3,7 @@ import * as mapsFunction from "./function-declarations.js";
 import { presets } from "./presets.js";
 import { html, render } from "https://esm.run/lit";
 
-const client = new GoogleGenerativeAI("AIzaSyCK7BN_JxEamuFPmLgT0UbNcwQrizHRqa4");
+const client = new GoogleGenerativeAI("api_key");
 const systemInstruction = mapsFunction.systemInstructions;
 
 const functionDeclarations = mapsFunction.declarations.map(declaration => ({
